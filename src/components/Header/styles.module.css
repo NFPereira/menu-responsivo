@@ -1,0 +1,96 @@
+header{
+    width: 100%;
+    background-color: #000;
+}
+.navbar{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+}
+.menu ul li a:hover{
+    background-color: #3b5998;
+    color: #fff;
+}
+.login_button button{
+    border: none;
+    background-color: #3b5998;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+.login_button button a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+.mobile_menu_icon{
+    display: none;
+}
+.mobile_menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .navbar{
+        width: 100%;
+        padding: 1.5rem 4rem;
+    }
+    .menu, .login_button{
+        display: none;
+    }
+    .mobile_menu_icon{
+        color: #fff;
+        padding: 10px;
+        font-size: 30px;
+        display: block;
+    }
+    .mobile_menu ul li{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10;
+    }
+    .mobile_menu{
+        padding-top: 1.2rem;
+        display: block;
+    }
+    .mobile_menu ul li a{
+        color: #fff;
+        padding: 20px;
+        text-decoration: none;
+        transition: 0.6s;
+    }
+    .mobile_menu ul li a:hover{
+        background-color: #3b5998;
+        color: #fff;
+    }
+    .mobile_menu .login_button{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile_menu .login_button button{
+        width: 100%;
+    }
+}
